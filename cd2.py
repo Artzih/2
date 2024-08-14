@@ -2,7 +2,7 @@ import streamlit as st
 import speech_recognition as sr
 
 def principal():
-    st.title("Tabela de promoções")
+    st.title("Transcrição de audio")
     upload = st.file_uploader("Faça upload do arquivo de audio", type = ["wav"])
     if upload is not None:
         transcrever(upload)
